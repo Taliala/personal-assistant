@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using PersonalAssistant.Services.Events.Managers;
+using PersonalAssistant.Services.Sms;
 
 namespace DndBuilderApi
 {
@@ -26,6 +28,9 @@ namespace DndBuilderApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddScoped<IEventsManager, EventsManager>();
+            services.AddScoped<ISmsService, SmsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
