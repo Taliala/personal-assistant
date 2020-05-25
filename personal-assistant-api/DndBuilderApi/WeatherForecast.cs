@@ -1,6 +1,6 @@
 using System;
 
-namespace DndBuilderApi
+namespace PersonalAssistantApi
 {
     public class WeatherForecast
     {

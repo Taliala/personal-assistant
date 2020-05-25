@@ -13,7 +13,7 @@ using Microsoft.Extensions.Logging;
 using PersonalAssistant.Services.Events.Managers;
 using PersonalAssistant.Services.Sms;
 
-namespace DndBuilderApi
+namespace PersonalAssistantApi
 {
     public class Startup
     {
